@@ -1,0 +1,415 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-24 09:31+0000\n"
+"PO-Revision-Date: 2026-05-24 09:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Accept"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields.selection,name:school_management.selection__iti_student__status__accepted
+msgid "Accepted"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__age
+msgid "Age"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__birthday
+msgid "Birthday"
+msgstr ""
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.create_track_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.create_track_form_view
+msgid "Create"
+msgstr ""
+
+#. module: school_management
+#: model:ir.actions.act_window,name:school_management.create_track_act_window
+#: model:ir.model,name:school_management.model_create_track
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Create Track"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__create_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__create_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_student__create_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_track__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__create_date
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__create_date
+#: model:ir.model.fields,field_description:school_management.field_iti_student__create_date
+#: model:ir.model.fields,field_description:school_management.field_iti_track__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__description
+msgid "Description"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__display_name
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__display_name
+#: model:ir.model.fields,field_description:school_management.field_iti_student__display_name
+#: model:ir.model.fields,field_description:school_management.field_iti_track__display_name
+#: model:ir.model.fields,field_description:school_management.field_sale_order__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: school_management
+#: model:ir.model.fields.selection,name:school_management.selection__iti_student__status__draft
+msgid "Draft"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__duration
+#: model:ir.model.fields,field_description:school_management.field_iti_student__duration
+#: model:ir.model.fields,field_description:school_management.field_iti_track__duration
+msgid "Duration"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__email
+msgid "Email"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__id
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__id
+#: model:ir.model.fields,field_description:school_management.field_iti_student__id
+#: model:ir.model.fields,field_description:school_management.field_iti_track__id
+#: model:ir.model.fields,field_description:school_management.field_sale_order__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: school_management
+#: model:ir.actions.act_window,name:school_management.action_skills_track
+#: model:ir.ui.menu,name:school_management.menu_iti_skills
+msgid "ITI Skills"
+msgstr ""
+
+#. module: school_management
+#: model:ir.actions.act_window,name:school_management.action_iti_student
+#: model:ir.model,name:school_management.model_iti_student
+#: model:ir.ui.menu,name:school_management.menu_iti_student
+msgid "ITI Student"
+msgstr "الطلاب"
+
+#. module: school_management
+#: model:ir.actions.act_window,name:school_management.action_iti_track
+#: model:ir.ui.menu,name:school_management.menu_iti_track
+msgid "ITI track"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__message_has_error
+#: model:ir.model.fields,help:school_management.field_iti_student__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__is_graduated
+msgid "Is Graduated"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__write_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__write_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_student__write_uid
+#: model:ir.model.fields,field_description:school_management.field_iti_track__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__write_date
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__write_date
+#: model:ir.model.fields,field_description:school_management.field_iti_student__write_date
+#: model:ir.model.fields,field_description:school_management.field_iti_track__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message
+msgid "Message"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.create_track_form_view
+msgid "ModelTitle"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_skill__name
+#: model:ir.model.fields,field_description:school_management.field_iti_student__name
+msgid "Name"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__notes
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Notes"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields.selection,name:school_management.selection__iti_student__status__rejected
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Rejected"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__salary
+msgid "Salary"
+msgstr ""
+
+#. module: school_management
+#. odoo-python
+#: code:addons/school_management/models/iti_student.py:0
+msgid "Salary must be greater than 1000"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model,name:school_management.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: school_management
+#: model:ir.ui.menu,name:school_management.menu_school_management_root
+msgid "School Management"
+msgstr "ادارة المدارس"
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Set Draft"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__skills_ids
+msgid "Skills"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__status
+msgid "Status"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Student Details"
+msgstr ""
+
+#. module: school_management
+#: model_terms:ir.ui.view,arch_db:school_management.iti_student_form_view
+msgid "Student Information"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_track__student_ids
+msgid "Students"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.constraint,message:school_management.constraint_iti_student_name_uniq
+msgid "The name must be unique!"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_create_track__title
+#: model:ir.model.fields,field_description:school_management.field_iti_track__title
+msgid "Title"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__track_id
+#: model:ir.model.fields,field_description:school_management.field_sale_order__track_id
+msgid "Track"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,field_description:school_management.field_iti_student__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model.fields,help:school_management.field_iti_student__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model,name:school_management.model_iti_skill
+msgid "iti.skill"
+msgstr ""
+
+#. module: school_management
+#: model:ir.model,name:school_management.model_iti_track
+msgid "iti.track"
+msgstr ""

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sale_order_form_inherit" model="ir.ui.view">
+            <field name="name">sale.order.track</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_term_id']" position="before">
+                    <field name="track_id"/>
+                </xpath>
+                 <xpath expr="//field[@name='payment_term_id']" position="attributes">
+                     <attribute name="required">1</attribute>
+                 </xpath>
+<!--                after   -->
+<!--                before  -->
+<!--                inside  -->
+<!--                replace -->
+<!--                <field name="date_order" position="after">-->
+<!--                    <field name="track_id"/>-->
+<!--                </field>-->
+
+            </field>
+        </record>
+    </data>
+</odoo>

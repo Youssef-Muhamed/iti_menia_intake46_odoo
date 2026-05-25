@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="iti_student_list_view" model="ir.ui.view">
+            <field name="name">iti.student.list</field>
+            <field name="model">iti.student</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="birthday"/>
+                    <field name="notes"/>
+                    <field name="age"/>
+                    <field name="is_graduated"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="iti_student_form_view" model="ir.ui.view">
+            <field name="name">iti.student.form</field>
+            <field name="model">iti.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="%(create_track_act_window)d" string="Create Track" type="action" class="oe_highlight"/>
+
+                        <button name="action_accept" invisible="status != 'draft'" string="Accept" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_set_draft" invisible="status == 'draft'" string="Set Draft" type="object"
+                                class="oe_highlight"/>
+                        <button name="action_rejected" invisible="status in ['rejected', 'accepted']" string="Rejected"
+                                type="object" class="oe_highlight"/>
+                        <field name="status" widget="statusbar" statusbar_visible="draft,accepted"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group string="Student Information">
+                                <field name="name" required="1"/>
+                                <field name="email"/>
+                                <field name="description"/>
+                                <field name="duration"/>
+                                <field name="activity_ids"/>
+
+                            </group>
+                            <group string="Student Details">
+                                <field name="birthday"/>
+                                <field name="age"/>
+                                <field name="is_graduated"/>
+                                <field name="salary" invisible="not is_graduated" groups="school_management.group_manager_school_management"/>
+                                <!--                                domain="[(duration,'&gt;',5)]"-->
+                                <field name="track_id"/>
+                                <field name="message"/>
+                                <field name="skills_ids" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Notes">
+                                <field name="notes"/>
+
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_iti_student" model="ir.actions.act_window">
+            <field name="name">ITI Student</field>
+            <field name="res_model">iti.student</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="menu_school_management_root" web_icon="school_management,static/description/icon.png"
+                  name="School Management" sequence="1"/>
+        <menuitem id="menu_iti_student" name="ITI Student" parent="menu_school_management_root"
+                  action="action_iti_student" sequence="1"/>
+
+
+        <!--        <menuitem id="menu_school_management_root" name="School Management" sequence="1">-->
+        <!--            <menuitem id="menu_iti_student" name="ITI Student" sequence="1"/>-->
+
+        <!--        </menuitem>-->
+
+
+    </data>
+</odoo>

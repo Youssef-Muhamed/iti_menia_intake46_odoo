@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record id="student_report_id" model="ir.actions.report">
+            <field name="name">Print Student</field>
+            <field name="model">iti.student</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">school_management.report_student_raw</field>
+            <field name="report_file">school_management.report_student_raw</field>
+            <field name="print_report_name">'Student - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="school_management.model_iti_student"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

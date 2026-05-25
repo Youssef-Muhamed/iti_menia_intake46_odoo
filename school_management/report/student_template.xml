@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <template id="report_student_document">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1>Student Report</h1>
+                        <div class="card" style="width: 18rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Name:
+                                    <t t-out="doc.name"/>
+                                </li>
+                                <li class="list-group-item">email:
+                                    <t t-out="doc.email"/>
+                                </li>
+                                <t t-if="doc.track_id.duration == 9">
+                                    <li style="color: red" class="list-group-item">track:
+                                        <t t-out="doc.track_id.title"/>
+                                    </li>
+                                </t>
+                                <t t-else="">
+                                    <li class="list-group-item">track:
+                                        <t t-out="doc.track_id.title"/>
+                                    </li>
+                                </t>
+                            </ul>
+                            <br/>
+                            <br/>
+                            <h3>Skills</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="row_number" t-value="0"/>
+                                    <t t-foreach="doc.skills_ids" t-as="skill">
+                                        <t t-set="row_number" t-value="row_number + 1"/>
+                                        <tr>
+                                            <th scope="row">
+                                                <t t-out="skill_index + 1"/>
+                                            </th>
+                                            <td>
+                                                <t t-out="skill.name"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <h3>All Tracks</h3>
+                            <t t-set="all_tracks" t-value="request.env['iti.track'].search([])"/>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Track</th>
+                                        <th scope="col">Duration</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="row_number" t-value="0"/>
+                                    <t t-foreach="all_tracks" t-as="track">
+                                        <t t-set="row_number" t-value="row_number + 1"/>
+                                        <tr>
+                                            <th scope="row">
+                                                <t t-out="row_number"/>
+                                            </th>
+                                            <td>
+                                                <t t-out="track.title"/>
+                                            </td>
+                                            <td>
+                                                <t t-out="track.duration"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                </t>
+            </t>
+        </template>
+
+        <template id="report_student_raw">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-call="school_management.report_student_document" />
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

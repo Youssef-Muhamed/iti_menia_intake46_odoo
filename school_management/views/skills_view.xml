@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="iti_skills_list_view" model="ir.ui.view">
+            <field name="name">iti.skill.list</field>
+            <field name="model">iti.skill</field>
+            <field name="arch" type="xml">
+                <list>
+                    <field name="name"/>
+
+                </list>
+            </field>
+        </record>
+
+        <record id="iti_skills_form_view" model="ir.ui.view">
+            <field name="name">iti.skill.form</field>
+            <field name="model">iti.skill</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_skills_track" model="ir.actions.act_window">
+            <field name="name">ITI Skills</field>
+            <field name="res_model">iti.skill</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="menu_iti_skills" name="ITI Skills" parent="menu_school_management_root"
+                  action="action_skills_track" sequence="3"/>
+
+    </data>
+</odoo>
